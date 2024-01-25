@@ -7,7 +7,6 @@ function List() {
   const { isPending, error, users } = useUsers();
 
   if (isPending) return <Spinner />;
-  console.log(users);
 
   return (
     <ul className={styles.list}>

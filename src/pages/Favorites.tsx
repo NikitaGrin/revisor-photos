@@ -1,5 +1,7 @@
+import Gallery from "../features/favorites/Gallery";
+
 function Favorites() {
-  return <div>fav</div>;
+  return <Gallery></Gallery>;
 }
 
 export default Favorites;

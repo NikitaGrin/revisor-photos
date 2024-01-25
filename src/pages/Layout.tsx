@@ -6,8 +6,8 @@ function Layout() {
     <div className={styles.layout}>
       <header className={styles.header}>
         <nav className={styles.nav}>
-          <NavLink to="/catalog">Catalog</NavLink>
-          <NavLink to="/favorites">Favorites</NavLink>
+          <NavLink to="/catalog">Каталог</NavLink>
+          <NavLink to="/favorites">Избранное</NavLink>
         </nav>
       </header>
       <Outlet />

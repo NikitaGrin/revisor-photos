@@ -25,6 +25,7 @@ function UserItem({ name, id }: { name: string; id: string }) {
               albumId={album.albumId}
               userId={album.userId}
               title={album.title}
+              key={album.albumId}
             />
           )
         )}

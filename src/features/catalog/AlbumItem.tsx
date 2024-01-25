@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import styles from "./AlbumItem.module.css";
 import ListItemControls from "./ListItemControls";
-import Gallery from "./Gallery";
+import Gallery from "../../ui/Gallery";
 
 function AlbumItem({
   albumId,
