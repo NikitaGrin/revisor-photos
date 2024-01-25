@@ -1,13 +1,8 @@
 :root {
   /* Indigo */
-  --color-brand-50: #eef2ff;
-  --color-brand-100: #e0e7ff;
-  --color-brand-200: #c7d2fe;
-  --color-brand-500: #6366f1;
-  --color-brand-600: #4f46e5;
-  --color-brand-700: #4338ca;
-  --color-brand-800: #3730a3;
-  --color-brand-900: #312e81;
+  --color-brand-10: #edf9ff5e;
+  --color-brand-50: #edf9ff;
+  --color-brand-700: #117dc1;
 
   /* Grey */
   --color-grey-0: #fff;
@@ -62,7 +57,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   color: var(--color-grey-900);
   font-weight: 400;
 }
