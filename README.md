@@ -1,5 +1,8 @@
 # revisor-photos
 
+![image](https://github.com/NikitaGrin/revisor-photos/assets/87934111/f47aa75a-0b40-476d-bfea-efc97264ab83)
+
+
 ## Использованный стек
 
 - React Router
