@@ -11,7 +11,13 @@ function Gallery() {
     e.stopPropagation();
   }
 
-  // if (isPending) return <Spinner />;
+  if (!photos.length)
+    return (
+      <h2 className={styles.header}>
+        Пока нет фотографий в избранном. Помечайте фото звездочкой, чтобы
+        увидеть их здесь!
+      </h2>
+    );
 
   return (
     <div onClick={handleClick} className={styles.gallery}>

@@ -14,11 +14,13 @@ function GalleryItem({
   title,
   id,
   albumId,
+  isTextHidden = false,
 }: {
   url: string;
   title: string;
   id: string;
   albumId: string;
+  isTextHidden?: boolean;
 }) {
   const [isModalActive, setIsModalActive] = useState(false);
   const [isFavorite, setIsFavorite] = useState(useSelector(getIsFavorite(id)));
@@ -49,7 +51,12 @@ function GalleryItem({
           url={url}
         />
       )}
-      <div onClick={handleOpen} className={styles.galleryItem}>
+      <div
+        onClick={handleOpen}
+        className={`${styles.galleryItem} ${
+          isTextHidden && styles.galleryItemHidden
+        }`}
+      >
         <img alt={title} src={url} />
         <div className={styles.favorite} onClick={handleFavorite}>
           {isFavorite ? (
@@ -58,7 +65,7 @@ function GalleryItem({
             <HiOutlineStar color={"orange"} />
           )}
         </div>
-        <span className={styles.itemTitle}>{title}</span>
+        <span className={`${!isTextHidden && styles.itemTitle}`}>{title}</span>
       </div>
     </>
   );

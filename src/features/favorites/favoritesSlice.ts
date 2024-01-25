@@ -8,12 +8,6 @@ const initialState = {
       title: "Кадровой рост для повышению важную же.",
       url: "https://loremflickr.com/150/150/cats?lock=1209263554822144",
     },
-    {
-      albumId: "f36f1f94-56cc-43dd-83a1-1fc462a0b972",
-      id: "60911f27-9cad-4b72-b5a2-3c283955e920",
-      title: "Представляет а требует забывать эксперимент для вызывает.",
-      url: "https://loremflickr.com/150/150/cats?lock=6576324923621376",
-    },
   ],
 };
 

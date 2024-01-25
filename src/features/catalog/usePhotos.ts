@@ -1,14 +1,14 @@
 import { useQuery } from "@tanstack/react-query";
 import { getPhotos } from "../../services/apiPhotos";
 
-export function usePhotos(userId: string) {
+export function usePhotos(albumId: string) {
   const {
     isPending,
     data: photos,
     error,
   } = useQuery({
-    queryKey: ["photos"],
-    queryFn: () => getPhotos(userId),
+    queryKey: ["photos", albumId],
+    queryFn: () => getPhotos(albumId),
     retry: false,
   });
 

@@ -22,7 +22,7 @@ function Gallery({ albumId = "" }: { albumId: string }) {
           url: string;
           title: string;
         }) => (
-          <GalleryItem key={photo.url} {...photo} />
+          <GalleryItem isTextHidden={true} key={photo.url} {...photo} />
         )
       )}
     </div>
