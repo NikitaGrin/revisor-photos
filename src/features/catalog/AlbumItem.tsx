@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import styles from "./AlbumItem.module.css";
 import ListItemControls from "./ListItemControls";
-import GalleryItem from "./GalleryItem";
+import Gallery from "./Gallery";
 
 function AlbumItem({
   albumId,
@@ -30,7 +30,7 @@ function AlbumItem({
           isNested={true}
         />
 
-        {!isCollapsed && <GalleryItem albumId={albumId} />}
+        {!isCollapsed && <Gallery albumId={albumId} />}
       </ul>
     </>
   );

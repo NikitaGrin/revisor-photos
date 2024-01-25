@@ -1,0 +1,44 @@
+.modal {
+  position: absolute;
+  background-color: var(--color-grey-transparent);
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.image {
+  width: 60rem;
+  height: 60rem;
+  cursor: default;
+}
+
+.closeModal {
+  position: absolute;
+  top: 2rem;
+  right: 5rem;
+  font-size: 5rem;
+  color: var(--color-grey-0);
+  font-weight: 100;
+}
+
+/* .modal {
+  max-width: 70rem;
+  width: 50vw;
+  border-radius: 2rem;
+  padding: 2rem;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.modalTitle {
+  font-size: 3rem;
+} */

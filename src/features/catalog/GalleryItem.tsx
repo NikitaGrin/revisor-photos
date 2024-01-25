@@ -1,24 +1,28 @@
-import { usePhotos } from "./usePhotos";
 import styles from "./GalleryItem.module.css";
-import Spinner from "../../ui/Spinner";
+import GalleryModal from "./GalleryModal";
+import { useState } from "react";
 
-function GalleryItem({ albumId }: { albumId: string }) {
-  const { isPending, error, photos } = usePhotos(albumId);
+function GalleryItem({ url, title }: { url: string; title: string }) {
+  const [isModalActive, setIsModalActive] = useState(false);
 
-  if (isPending) return <Spinner />;
+  function handleClick() {
+    setIsModalActive(true);
+  }
 
   return (
-    <div className={styles.gallery}>
-      {photos.map((photo: { url: string; title: string }) => (
-        <div>
-          <img
-            alt={photo.title}
-            src={photo.url}
-            className={styles.galleryItem}
-          />
-        </div>
-      ))}
-    </div>
+    <>
+      {isModalActive && (
+        <GalleryModal
+          title={title}
+          setIsModalActive={setIsModalActive}
+          url={url}
+        />
+      )}
+      <div onClick={handleClick} className={styles.galleryItem}>
+        <img alt={title} src={url} />
+        <span className={styles.itemTitle}>{title}</span>
+      </div>
+    </>
   );
 }
 
