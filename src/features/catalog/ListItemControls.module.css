@@ -1,0 +1,47 @@
+.controls {
+  padding: 3rem 0;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  border-radius: 1.4rem;
+  padding-left: 3rem;
+  transition: 0.2s all;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--color-brand-10);
+  }
+}
+
+.controlsActive {
+  background-color: var(--color-brand-50);
+
+  &:hover {
+    background-color: var(--color-brand-50);
+  }
+}
+
+.btnCollapse {
+  border: none;
+  background-color: var(--color-brand-700);
+  color: var(--color-grey-0);
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: block;
+}
+
+.btnCollapseSmall {
+  width: 2rem;
+  height: 2rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
